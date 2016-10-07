@@ -1,20 +1,18 @@
 <div class="container">
-  <div class="row flex">
+  <div class="row">
     <% data.equipe.each do |name, details| %>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card-grid">
-        <div class="card">
-          <%= image_tag details.photo, class:"avatar-xlarge" %>
-          <div class="card-description">
-            <p>
-              <strong>
-                <%= name %>
-              </strong>
-            </p>
-            <div class="card-price">
-            <li><%= details.fonction %></li>
-            <li><%= details.jours %></li>
-            </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card">
+        <%= image_tag details.photo, class:"avatar-xlarge" %>
+        <div class="card-description">
+          <p>
+            <strong>
+              <%= name %>
+            </strong>
+          </p>
+          <div class="card-price">
+            <p><%= details.fonction %>
+            <%= details.jours %></p>
           </div>
         </div>
       </div>
