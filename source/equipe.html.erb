@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row flex">
+    <% data.equipe.each do |name, details| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card-grid">
+        <div class="card">
+          <%= image_tag details.photo, class:"avatar-xlarge" %>
+          <div class="card-description">
+            <p>
+              <strong>
+                <%= name %>
+              </strong>
+            </p>
+            <div class="card-price">
+            <li><%= details.fonction %></li>
+            <li><%= details.jours %></li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
