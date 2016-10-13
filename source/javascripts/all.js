@@ -4,13 +4,13 @@
 //= require materialize
 
 $(document).ready(function(){
-  var carousel_interval = 5000;
+  var carousel_interval = 7000;
   $('.carousel.carousel-slider').carousel({
     full_width: true,
     indicators: true,
-    time_constant: 500
+    time_constant: 1000
   });
-  setInterval(function(){
-    $('.carousel').carousel('next');
-  }, carousel_interval);
+  // setInterval(function(){
+  //   $('.carousel').carousel('next');
+  // }, carousel_interval);
 });

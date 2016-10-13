@@ -1,0 +1,25 @@
+.carousel.carousel-slider {
+  display: flex;
+}
+
+
+.carousel.carousel-slider .carousel-item {
+  background-size: cover;
+  height: 80vh;
+}
+
+.carousel.carousel-slider .carousel-fixed-item {
+  position: initial;
+  margin: auto;
+  h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 25px;
+    font-weight: lighter;
+    margin-bottom: 50px;
+    margin-top:25px;
+  }
+}
