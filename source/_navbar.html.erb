@@ -1,27 +1,18 @@
-<div class="navbar-wagon navbar-wagon-fixed">
-  <!-- Logo -->
-  <% link_to "/", class: "navbar-wagon-brand" do %>
-  <%= image_tag "logo.png" %>
-  <% end %>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs">
-
-    <!-- Text link -->
-    <%= link_to "Equipe", "/equipe.html", class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <!-- Text link -->
-    <%= link_to "Contact", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %>
-
-    <!-- Dropdown appearing on mobile only -->
-  </div>
-  <div class="navbar-wagon-item hidden-sm hidden-md hidden-lg">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><%= link_to "Equipe", "/equipe.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
-        <li><%= link_to "Contact", "/contact.html", class: "navbar-wagon-item navbar-wagon-link" %></li>
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <% link_to "/" do %>
+        <%= image_tag "logo.png", class: "brand-logo center" %>
+      <% end %>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><%= link_to "Equipe", "/equipe.html" %></li>
+        <li><%= link_to "Contact", "/contact.html" %></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><%= link_to "Equipe", "/equipe.html" %></li>
+        <li><%= link_to "Contact", "/contact.html" %></li>
       </ul>
     </div>
-  </div>
+  </nav>
 </div>

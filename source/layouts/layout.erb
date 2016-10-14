@@ -10,8 +10,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- For Materialise Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Cabinet Bombaye" %></title>
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -24,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body class="<%= page_classes %> padded">
+  <body class="<%= page_classes %>">
 
     <%= partial "navbar" %>
     <%= yield %>

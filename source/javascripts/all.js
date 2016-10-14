@@ -13,4 +13,5 @@ $(document).ready(function(){
   // setInterval(function(){
   //   $('.carousel').carousel('next');
   // }, carousel_interval);
+  $(".button-collapse").sideNav();
 });
