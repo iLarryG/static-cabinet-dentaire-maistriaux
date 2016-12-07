@@ -1,12 +1,16 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
+      <ul class="left hide-on-med-and-down">
+        <li><%= link_to "Cabinets dentaires de Bombaye", "/" %></li>
+      </ul>
       <% link_to "/" do %>
         <%= image_tag "logo.png", class: "brand-logo center" %>
       <% end %>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down">
         <li><%= link_to "Equipe", "/equipe.html" %></li>
+        <li><%= link_to "Photos", "/photos.html" %></li>
         <li><%= link_to "Contact", "/contact.html" %></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
