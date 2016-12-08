@@ -10,8 +10,12 @@ $(document).ready(function(){
     indicators: true,
     time_constant: 1000
   });
-  // setInterval(function(){
-  //   $('.carousel').carousel('next');
-  // }, carousel_interval);
+
+  setInterval(function(){
+    $('.carousel').carousel('next');
+  }, carousel_interval);
+
   $(".button-collapse").sideNav();
+
+  $( '.swipebox' ).swipebox();
 });
