@@ -1,22 +1,28 @@
-<div class="container">
-  <div class="row">
-    <% data.equipe.each do |name, details| %>
-    <div class="col-xs-12 col-sm-6 col-md-3">
-      <div class="card">
-        <%= image_tag details.photo, class:"avatar-xlarge" %>
-        <div class="card-description">
-          <p>
-            <strong>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <% data.equipe.each do |name, details| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="card">
+          <%= image_tag details.photo, class:"avatar-xlarge" %>
+          <div class="card-description">
+            <bold>
               <%= name %>
-            </strong>
-          </p>
-          <div class="card-price">
-            <p><%= details.fonction %>
-            <%= details.jours %></p>
+            </bold>
+            <p>
+              <i><%= details.fonction %></i>
+            </p>
+            <div class="card-days">
+              <% details.jours.each do |day, nothing| %>
+              <ul>
+                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <%= day %></li>
+              </ul>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
+      <% end %>
     </div>
-    <% end %>
   </div>
 </div>
