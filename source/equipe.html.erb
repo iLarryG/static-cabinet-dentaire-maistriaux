@@ -1,10 +1,10 @@
 <div class="wrapper">
   <div class="container">
     <div class="row">
-      <% data.equipe.each do |name, details| %>
+      <% data.dentistes.each do |name, details| %>
       <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
         <div class="card">
-          <%= image_tag details.photo, class:"avatar-xlarge" %>
+          <%= image_tag details.photo, class: "avatar-xlarge" %>
           <div class="card-description">
             <bold>
               <%= name %>

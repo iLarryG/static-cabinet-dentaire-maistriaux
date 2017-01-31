@@ -1,8 +1,45 @@
-<div class="wrapper">
+<div class="wrapper center">
+<h3>Prenez rendez-vous chez nous au</h2>
+<h4><i class="fa fa-phone-square" aria-hidden="true"></i> <%= link_to "04/376.76.63", "callto:+3243767663", class: "kjbkj"%></h3>
+</div>
 
-
-
-<div class="padding-map">
+<div class="text-center assistantes padding-div">
+  <p>Nos assistantes se feront un plaisir de vous répondre<p>
+  <div class="container">
+    <div class="row">
+      <% data.assistantes.each do |name, details| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+          <%= image_tag details.photo, class: "avatar-xlarge" %>
+          <p><%= name %></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="padding-div center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Adresse</h5>
+        <p>
+          Chaussée du Comté de Dalhem 57</br>
+          4607 Bombaye</br>
+          Belgique</br>
+        </p>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Ouverture</h5>
+        <p>
+          Du Lundi au Samedi</br>
+          8h - 18h</br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+<p>Cliquez sur la carte pour calculer votre itinéraire.</p>
+<a href="https://www.google.be/maps/place/Maistriaux+Fran%C3%A7oise/@50.7263324,5.7401202,17z/data=!4m12!1m6!3m5!1s0x47c0eda2be335225:0x6a805d4c64842037!2sMaistriaux+Fran%C3%A7oise!8m2!3d50.7263324!4d5.7423089!3m4!1s0x47c0eda2be335225:0x6a805d4c64842037!8m2!3d50.7263324!4d5.7423089" target="_blank">
 <div id="map" style="width: 100%; height: 400px;"></div>
 
       <script type="text/javascript" src="https://maps.google.com/maps/api/js?libraries=places&key=AIzaSyCqNSZmuiLIzhMBq3Tpn7TnexS70hLeNjs"></script>
@@ -11,7 +48,7 @@
         var myLatlng = new google.maps.LatLng(50.726549, 5.742300);
 
         var myOptions = {
-          zoom: 13,
+          zoom: 12,
           center: myLatlng,
           scrollwheel: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -25,5 +62,5 @@ var marker = new google.maps.Marker({
   title: "You are here!"
 });
 </script>
-</div>
+</a>
 </div>

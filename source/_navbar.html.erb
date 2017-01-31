@@ -15,10 +15,12 @@
       </ul>
       <!-- Left Mobile Navbar -->
       <ul id="slide-out" class="side-nav">
-        <li><div class="userView background-sidenav">
-          <a href="/index.html"><img class="logo-sidenav" src="images/logo.png"></a>
-          <a href="/index.html"><span class="white-text name">Cabinet Dentaire de Bombaye</span></a>
-        </div></li>
+        <div class="userView background-sidenav">
+          <% link_to "/index.html" do %>
+            <%= image_tag "logo.png", class: "logo-sidenav" %>
+          <% end %>
+          <%= link_to "Cabinet Dentaire de Bombaye", "/equipe.html", class: "white-text" %>
+        </div>
         <li><%= link_to "Equipe", "/equipe.html" %></li>
         <li><%= link_to "Photos", "/photos.html" %></li>
         <li><%= link_to "Contact", "/contact.html" %></li>

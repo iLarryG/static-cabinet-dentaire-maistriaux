@@ -49,9 +49,14 @@ Yoann Compeyron:
   jours:
     Lundi:
     Vendredi:
+Jean Lhoest:
+  fonction: Dentiste Généraliste
+  photo: Equipe/Jean_Lhoest.jpg
+  jours:
+    Samedi:
 Bernard Soumoy:
   fonction: Orthodontiste
-  photo: placeholder.png
+  photo: Equipe/Bernard_Soumoy.jpg
   jours:
     Mercredi:
     Samedi:
