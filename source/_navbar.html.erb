@@ -1,14 +1,14 @@
 <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper">
-      <ul class="left hide-on-med-and-down">
+      <ul class="left hide-on-med-and-down white-hover">
         <li><%= link_to "Cabinets dentaires de Bombaye", "/index.html" %></li>
       </ul>
       <% link_to "/index.html" do %>
       <%= image_tag "logo.png", class: "brand-logo center" %>
       <% end %>
 
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down white-hover">
         <li><%= link_to "Equipe", "/equipe.html" %></li>
         <li><%= link_to "Photos", "/photos.html" %></li>
         <li><%= link_to "Contact", "/contact.html" %></li>
@@ -25,7 +25,9 @@
         <li><%= link_to "Photos", "/photos.html" %></li>
         <li><%= link_to "Contact", "/contact.html" %></li>
       </ul>
+      <div class="white-hover">
       <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
     </div>
   </nav>
 </div>

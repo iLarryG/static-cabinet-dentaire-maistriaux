@@ -11,9 +11,9 @@ $(document).ready(function(){
     time_constant: 1000
   });
 
-  // setInterval(function(){
-  //   $('.carousel').carousel('next');
-  // }, carousel_interval);
+  setInterval(function(){
+    $('.carousel').carousel('next');
+  }, carousel_interval);
 
     $('.button-collapse').sideNav({
       menuWidth: 240, // Default is 240
@@ -22,6 +22,6 @@ $(document).ready(function(){
       draggable: true // Choose whether you can drag to open on touch screens
     }
   );
-
+  $('.parallax').parallax();
   $( '.swipebox' ).swipebox();
 });

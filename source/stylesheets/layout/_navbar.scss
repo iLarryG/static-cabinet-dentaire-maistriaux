@@ -3,7 +3,6 @@ nav .brand-logo {
 }
 
 a:hover, a:focus {
-  color: white;
   text-decoration: none;
 }
 
@@ -16,6 +15,12 @@ a:hover, a:focus {
   display: block;
   margin: 0 auto;
   text-align: center;
+}
+
+.white-hover {
+  a:hover, a:focus {
+    color: white;
+  }
 }
 
 
