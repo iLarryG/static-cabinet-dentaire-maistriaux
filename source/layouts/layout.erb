@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="src/css/swipebox.css">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Cabinet Bombaye" %></title>
+    <title><%= current_page.data.title || "Cabinets Bombaye" %></title>
 
     <%= stylesheet_link_tag "all" %>
     <%= javascript_include_tag  "all" %>
@@ -35,5 +35,7 @@
     <%= partial "navbar" %>
     <%= yield %>
     <%= partial "footer" %>
+        <!-- For favicon -->
+    <%= partial "favicon" %>
   </body>
 </html>

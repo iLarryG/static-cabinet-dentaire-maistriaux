@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'sass-rails', '~> 5.0'
 gem 'middleman', '~> 3.4'
 gem 'middleman-livereload'
+gem "middleman-favicon-maker", "~> 3.7"
+gem 'slim',    '~> 3.0.2'
 
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'
