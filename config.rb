@@ -86,6 +86,9 @@ configure :build do
     }
   end
 
+  # Site map
+  activate :sitemap, hostname: data.settings.site.url
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -107,10 +110,20 @@ configure :build do
 end
 
 # Deployment
-require 'slim'
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.build_before = true
+case ENV['TARGET'].to_s.downcase
+when 'production'
+  activate :deploy do |deploy|
+    deploy.deploy_method   = :sftp
+    deploy.host            = 'sftp.cluster021.hosting.ovh.net'
+    deploy.path            = '/www/site'
+    deploy.user            = 'dentisteww'
+  end
+else
+  activate :deploy do |deploy|
+    deploy.method = :git
+    deploy.build_before = true
+  end
+end
 
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin

@@ -5,6 +5,7 @@ gem 'middleman', '~> 3.4'
 gem 'middleman-livereload'
 gem "middleman-favicon-maker", "~> 3.7"
 gem 'slim',    '~> 3.0.2'
+gem 'middleman-sitemap'
 
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'
