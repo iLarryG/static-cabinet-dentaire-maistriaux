@@ -30,6 +30,18 @@ activate :autoprefixer
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
+activate :protect_emails
+
+###
+# Google Analytics
+###
+activate :google_analytics do |ga|
+    ga.tracking_id = data.settings.google_analytics.tracking_code
+    ga.anonymize_ip = false
+    ga.debug = false
+    # ga.development = false
+    ga.minify = true
+end
 
 ###
 # Helpers
@@ -59,6 +71,7 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
 
+   #Favicon
    activate :favicon_maker do |f|
     f.template_dir  = File.join(root, 'source')
     f.output_dir    = File.join(root, 'build')
@@ -89,6 +102,17 @@ configure :build do
   # Site map
   activate :sitemap, hostname: data.settings.site.url
 
+  # Images compression
+  activate :imageoptim
+
+  # Minification
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html, remove_input_attributes: false
+
+  # Gzip compression
+  activate :gzip
+
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
@@ -110,20 +134,22 @@ configure :build do
 end
 
 # Deployment
+password = ENV["PASSWORD"]
 case ENV['TARGET'].to_s.downcase
 when 'production'
   activate :deploy do |deploy|
-    deploy.deploy_method   = :sftp
-    deploy.host            = 'sftp.cluster021.hosting.ovh.net'
-    deploy.path            = '/www/site'
+    deploy.method          = :ftp
+    deploy.host            = 'ftp.cluster021.hosting.ovh.net'
+    deploy.path            = 'www'
     deploy.user            = 'dentisteww'
+    deploy.password        = password
+    deploy.build_before = true
   end
 else
   activate :deploy do |deploy|
     deploy.method = :git
     deploy.build_before = true
   end
-end
 
   # Optional Settings
   # deploy.remote = 'custom-remote' # remote name or git url, default: origin

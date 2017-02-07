@@ -6,6 +6,10 @@ gem 'middleman-livereload'
 gem "middleman-favicon-maker", "~> 3.7"
 gem 'slim',    '~> 3.0.2'
 gem 'middleman-sitemap'
+gem 'middleman-google-analytics'
+gem 'middleman-protect-emails'
+gem 'middleman-imageoptim'
+gem 'middleman-minify-html'
 
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'
