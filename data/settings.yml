@@ -1,0 +1,23 @@
+site:
+  title: Cabinets dentaires de Bombaye
+  description: "Nous sommes des cabinets dentaires modernes dans un cadre rural"
+  url: "http://www.dentistes-dalhem.be"
+
+author:
+  name: Cabinets dentaires de Bombaye
+  address: Chaussée du Comté de Dalhem 57
+  city: 4607 Bombaye
+  phone: 04 376 76 63
+  email: asdonnay@gmail.com
+
+# social:
+#   facebook: "https://facebook.com/nowifisummercamp"
+#   twitter: "https://twitter.com/nowifisummercamp"
+
+copyright:
+  developer:
+    name: Larry G
+    url: "https://github.com/iLarryG"
+
+google_analytics:
+  tracking_code: "UA-91561118-1"
