@@ -103,7 +103,7 @@ configure :build do
   activate :sitemap, hostname: data.settings.site.url
 
   # Images compression
-  activate :imageoptim
+  # activate :imageoptim
 
   # Minification
   activate :minify_css
