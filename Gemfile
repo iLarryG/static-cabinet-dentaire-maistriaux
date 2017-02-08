@@ -11,7 +11,6 @@ gem 'middleman-protect-emails'
 gem 'middleman-imageoptim'
 gem 'middleman-minify-html'
 gem 'middleman-robots'
-gem 'middleman-meta-tags'
 
 # Deploy to GitHub Pages
 gem 'middleman-deploy', '~> 1.0'

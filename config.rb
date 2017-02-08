@@ -14,14 +14,6 @@ activate :autoprefixer
 # Page options, layouts, aliases and proxies
 ###
 
-activate :meta_tags
-set_meta_tags title: 'Cabinet dentaire pluridisciplinaire'
-title 'Cabinet dentaire pluridisciplinaire'
-set_meta_tags description: "Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi."
-description "Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi."
-set_meta_tags keywords: %w(dentiste dentisterie implant implantologie orthodontie orthodontiste liège visé dalhem maastricht conventionné).join(', ')
-keywords %w(dentiste dentisterie implant implantologie orthodontie orthodontiste liège visé dalhem maastricht conventionné).join(', ')
-
 # Per-page layout changes:
 #
 # With no layout
@@ -118,7 +110,7 @@ configure :build do
   activate :robots, :rules => [
     {:user_agent => '*', :allow => %w(/)}
   ],
-  :sitemap => "http://www.dentistes-dalhem.be/sitemap.xml"
+  :sitemap => "http://http://www.dentistes-dalhem.be/sitemap.xml"
 
   # Images compression
   activate :imageoptim
