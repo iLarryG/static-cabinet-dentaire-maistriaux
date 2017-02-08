@@ -133,7 +133,7 @@ configure :build do
   activate :build_cleaner
 end
 
-# Deployment
+# Deployment => to Deploy rake deploy:staging or PASSWORD=gr8passwd rake deploy:production
 password = ENV["PASSWORD"]
 case ENV['TARGET'].to_s.downcase
 when 'production'
