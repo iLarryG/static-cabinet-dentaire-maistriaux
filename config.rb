@@ -64,7 +64,7 @@ end
 # end
 
 # Directory indexes
-activate :directory_indexes
+# activate :directory_indexes
 
 set :css_dir, 'stylesheets'
 
@@ -110,7 +110,7 @@ configure :build do
   activate :robots, :rules => [
     {:user_agent => '*', :allow => %w(/)}
   ],
-  :sitemap => "http://http://www.dentistes-dalhem.be/sitemap.xml"
+  :sitemap => "http://www.dentistes-dalhem.be/sitemap.xml"
 
   # Images compression
   activate :imageoptim

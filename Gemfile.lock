@@ -139,8 +139,6 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    middleman-meta-tags (0.3.0)
-      middleman-core (>= 3.0.0)
     middleman-minify-html (3.4.1)
       htmlcompressor (~> 0.2.0)
       middleman-core (>= 3.2)
@@ -242,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (= 3.3.6)
   font-awesome-sass (= 4.5.0)
+  image_optim_pack
   jquery-middleman
   middleman (~> 3.4)
   middleman-autoprefixer
@@ -250,7 +249,6 @@ DEPENDENCIES
   middleman-google-analytics
   middleman-imageoptim
   middleman-livereload
-  middleman-meta-tags
   middleman-minify-html
   middleman-protect-emails
   middleman-robots

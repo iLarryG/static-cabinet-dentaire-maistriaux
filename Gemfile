@@ -9,6 +9,7 @@ gem 'middleman-sitemap'
 gem 'middleman-google-analytics'
 gem 'middleman-protect-emails'
 gem 'middleman-imageoptim'
+gem 'image_optim_pack'
 gem 'middleman-minify-html'
 gem 'middleman-robots'
 
