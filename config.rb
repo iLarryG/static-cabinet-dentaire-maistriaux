@@ -18,6 +18,7 @@ activate :autoprefixer
 #
 # With no layout
 # page "/path/to/file.html", :layout => false
+page "/sitemap.html", :layout => false
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
@@ -62,6 +63,9 @@ end
 #   end
 # end
 
+# Directory indexes
+# activate :directory_indexes
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
@@ -99,25 +103,29 @@ configure :build do
     }
   end
 
-  # Site map
+  # Sitemap
   activate :sitemap, hostname: data.settings.site.url
+
+  # Robots.txt
+  activate :robots, :rules => [
+    {:user_agent => '*', :allow => %w(/)}
+  ],
+  :sitemap => "http://www.dentistes-dalhem.be/sitemap.xml"
 
   # Images compression
   activate :imageoptim
 
   # Minification
-  activate :minify_css
-  activate :minify_javascript
   activate :minify_html, remove_input_attributes: false
 
   # Gzip compression
   activate :gzip
 
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :asset_hash

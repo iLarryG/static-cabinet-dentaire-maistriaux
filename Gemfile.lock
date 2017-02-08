@@ -144,6 +144,8 @@ GEM
       middleman-core (>= 3.2)
     middleman-protect-emails (0.4.0)
       middleman-core (>= 3.4)
+    middleman-robots (1.1.0)
+      middleman (>= 3.3)
     middleman-sitemap (0.0.13)
       middleman-core (>= 3.2.2)
     middleman-sprockets (3.4.2)
@@ -238,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass (= 3.3.6)
   font-awesome-sass (= 4.5.0)
+  image_optim_pack
   jquery-middleman
   middleman (~> 3.4)
   middleman-autoprefixer
@@ -248,6 +251,7 @@ DEPENDENCIES
   middleman-livereload
   middleman-minify-html
   middleman-protect-emails
+  middleman-robots
   middleman-sitemap
   rails-assets-materialize!
   sass-rails (~> 5.0)
