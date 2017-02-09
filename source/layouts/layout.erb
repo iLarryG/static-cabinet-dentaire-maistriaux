@@ -12,28 +12,44 @@
 
     <!-- Search engines -->
     <meta name="description" content="Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi.">
-    <meta name="keywords" content="dentiste, dentisterie, implant, implantologie, orthodontie, orthodontiste, liège, visé, dalhem, maastricht, conventionné">
     <!-- Google Plus -->
     <!-- Update your html tag to include the itemscope and itemtype attributes. -->
     <!-- html itemscope itemtype="http://schema.org/{CONTENT_TYPE}" -->
-    <meta itemprop="name" content="Cabinet dentaire de Bombaye">
+    <meta itemprop="name" content="Cabinet dentaire de Bombaye | dentistes-dalhem.be">
     <meta itemprop="description" content="Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi.">
-    <meta itemprop="image" content="http://www.dentistes-dalhem.be/images/Cabinet/IMG_4541_custom.jpg">
+    <meta itemprop="image" content="http://www.dentistes-dalhem.be/images/Cabinet/IMG_4541_index.jpg">
     <!-- Twitter -->
-    <meta name="twitter:card" content="Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi.">
-    <meta name="twitter:title" content="Cabinet dentaire de Bombaye">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@iLarryG">
+    <meta name="twitter:title" content="Cabinet dentaire de Bombaye | dentistes-dalhem.be">
     <meta name="twitter:description" content="Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi.">
     <meta name="twitter:creator" content="@iLarryG">
     <meta name="twitter:image:src" content="http://www.dentistes-dalhem.be/images/Cabinet/IMG_4541_index.jpg">
-    <meta name="twitter:player" content="">
     <!-- Open Graph General (Facebook & Pinterest) -->
     <meta property="og:url" content="http://www.dentistes-dalhem.be/">
-    <meta property="og:title" content="Cabinet dentaire de Bombaye">
+    <meta property="og:title" content="Cabinet dentaire de Bombaye | dentistes-dalhem.be">
     <meta property="og:description" content="Nous sommes un cabinet dentaire moderne et pluridisciplinaire dans un cadre rural. Nous pratiquons la dentisterie, l'implantologie et l'orthodontie. Nous sommes ouvert du lundi au samedi.">
-    <meta property="og:site_name" content="Dentistes-Dalhem">
+    <meta property="og:site_name" content="Dentistes-Dalhem.be">
     <meta property="og:image" content="http://www.dentistes-dalhem.be/images/Cabinet/IMG_4541_index.jpg">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '192995537844442'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=192995537844442&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+
 
     <!-- For favicon -->
     <%= partial "favicon" %>
@@ -64,4 +80,10 @@
     <%= yield %>
     <%= partial "footer" %>
   </body>
+  <script>
+  fbq('track', 'ViewContent', {
+  value: 1.00,
+  currency: 'EUR'
+  });
+  </script>
 </html>
