@@ -13,7 +13,7 @@ activate :autoprefixer
 ###
 # Page options, layouts, aliases and proxies
 ###
-
+activate :i18n, :langs => [:fr]
 # Per-page layout changes:
 #
 # With no layout
