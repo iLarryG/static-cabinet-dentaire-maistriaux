@@ -5,15 +5,7 @@ Françoise Maistriaux:
     Lundi:
     Mercredi:
     Vendredi:
-    Samedi:
-Jennifer Smets:
-  fonction: Dentiste Généraliste
-  photo: Equipe/Jennifer_Smets.jpg
-  jours:
-    Lundi:
-    Mercredi:
-    Jeudi:
-    Vendredi:
+    Samedi (am):
 Anne-Sophie Donnay:
   fonction: Dentiste Généraliste
   photo: Equipe/Anne-Sophie_Donnay.jpg
@@ -21,24 +13,32 @@ Anne-Sophie Donnay:
     Lundi:
     Mardi:
     Jeudi:
-    Samedi:
+    Samedi (pm):
+Jennifer Smets:
+  fonction: Dentiste Généraliste
+  photo: Equipe/Jennifer_Smets.jpg
+  jours:
+    Mardi (am):
+    Jeudi:
+    Vendredi:
 Laurie D'alpaos:
   fonction: Dentiste Généraliste
   photo: Equipe/Laurie_D'Alpaos.jpg
   jours:
-    Mardi:
+    Mardi (pm):
     Mercredi:
-    Samedi:
+    Samedi (am):
 Jean-Philippe Donnay:
   fonction: Dentiste Généraliste
   photo: Equipe/Jean-Philippe_Donnay.jpg
   jours:
+    Mercredi:
     Jeudi:
     Vendredi:
-    Samedi:
+    Samedi (pm):
 Arnaud François:
   fonction: Dentiste Généraliste
-  photo: Equipe/Arnaud_Francois.jpg
+  photo: Equipe/Arnaud_Francois(new).jpg
   jours:
     Mardi:
     Jeudi:
@@ -53,10 +53,16 @@ Jean Lhoest:
   fonction: Dentiste Généraliste
   photo: Equipe/Jean_Lhoest.jpg
   jours:
-    Mercredi:
+    Mardi:
 Bernard Soumoy:
   fonction: Orthodontiste
   photo: Equipe/Bernard_Soumoy.jpg
   jours:
+    Samedi:
+Sarah Tarek:
+  fonction: Dentiste Généraliste
+  photo: placeholder.png
+  jours:
+    Lundi:
     Mercredi:
     Samedi:
