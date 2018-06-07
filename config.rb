@@ -113,7 +113,7 @@ configure :build do
   :sitemap => "http://www.dentistes-dalhem.be/sitemap.xml"
 
   # Images compression
-  activate :imageoptim
+  #activate :imageoptim
 
   # Minification
   activate :minify_html, remove_input_attributes: false
@@ -150,7 +150,7 @@ when 'production'
     deploy.host            = 'ftp.cluster021.hosting.ovh.net'
     deploy.path            = 'www'
     deploy.user            = 'dentisteww'
-    deploy.password        = password
+    deploy.password        = 'Francoise2410'
     deploy.build_before = true
   end
 else
