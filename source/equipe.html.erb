@@ -6,7 +6,32 @@ title: Equipe
 
   <div class="container">
     <div class="row">
+      <h4><center><b>Nos dentistes</b></center></h4>
       <% data.dentistes.each do |name, details| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="card">
+          <%= image_tag details.photo, class: "avatar-xlarge" %>
+          <div class="card-description">
+            <bold>
+              <%= name %>
+            </bold>
+            <div class="card-days">
+              <% details.jours.each do |day, nothing| %>
+              <ul>
+                <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <%= day %></li>
+              </ul>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h4><center><b>Nos spécialistes</b></center></h4>
+      <% data.specialistes.each do |name, details| %>
       <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
         <div class="card">
           <%= image_tag details.photo, class: "avatar-xlarge" %>
@@ -24,6 +49,23 @@ title: Equipe
               </ul>
               <% end %>
             </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <h4><center><b>Nos assistantes</b></center></h4>
+      <% data.assistantes.each do |name, details| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-xl-3">
+        <div class="card">
+          <%= image_tag details.photo, class: "avatar-xlarge" %>
+          <div class="card-description">
+            <bold>
+              <%= name %>
+            </bold>
           </div>
         </div>
       </div>
