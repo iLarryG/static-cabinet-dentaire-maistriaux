@@ -7,25 +7,37 @@ title: Contact
 </div>
 
 <div class="padding-div center">
-  <h4>Prenez rendez-vous au</h4>
+  <h4><b>Prenez rendez-vous au</b></h4>
   <h4>
-    <a href="tel://+3243767663">
-      <i class="fa fa-phone-square" aria-hidden="true"></i> 04/376.76.63</a>
-    </h4>
+    <button type="button" class="btn-large btn-light"><a href="tel://+3243767663" class="white-text">
+      <i class="fa fa-phone-square" aria-hidden="true"></i> 04/376.76.63</a></button>
+  </h4>
+        <h5><p>Nos assistantes se feront un plaisir de vous répondre<p></h5>
+      <div class="container">
+        <div class="row">
+          <% data.assistantes.each do |name, details| %>
+          <div class="col-xs-12 col-sm-4">  <!-- col-md-4 col-xl-3 -->
+            <%= image_tag details.photo, class: "avatar-xlarge" %>
+          </div>
+          <% end %>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="text-center assistantes padding-div">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
-          <h5><i class="fa fa-map-marker" aria-hidden="true"></i> Adresse</h5>
+          <h5><b><i class="fa fa-map-marker" aria-hidden="true"></i> Adresse</b></h5>
           <p>
             Chaussée du Comté de Dalhem 57</br>
             4607 Bombaye</br>
             Belgique</br>
-            </br>
-            <a href="https://www.google.be/maps/place/Maistriaux+Fran%C3%A7oise/@50.7263324,5.7401202,17z/data=!4m12!1m6!3m5!1s0x47c0eda2be335225:0x6a805d4c64842037!2sMaistriaux+Fran%C3%A7oise!8m2!3d50.7263324!4d5.7423089!3m4!1s0x47c0eda2be335225:0x6a805d4c64842037!8m2!3d50.7263324!4d5.7423089" target="_blank"><i class="fa fa-map-signs" aria-hidden="true"></i> Calculer votre itinéraire</a></br>
           </p>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <h5><i class="fa fa-clock-o" aria-hidden="true"></i> Ouverture</h5>
+          <h5><b><i class="fa fa-clock-o" aria-hidden="true"></i> Ouverture</b></h5>
           <p>
             Du Lundi au Samedi</br>
             8h30 - 18h30</br>
@@ -33,20 +45,8 @@ title: Contact
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="text-center assistantes padding-div">
-    <p>Nos assistantes se feront un plaisir de vous répondre<p>
-      <div class="container">
-        <div class="row">
-          <% data.assistantes.each do |name, details| %>
-          <div class="col-xs-12 col-sm-4">  <!-- col-md-4 col-xl-3 -->
-            <%= image_tag details.photo, class: "avatar-xlarge" %>
-            <p><%= name %></p>
-          </div>
-          <% end %>
-        </div>
-      </div>
+    <button type="button" class="btn btn-light"><a href="https://www.google.be/maps/place/Maistriaux+Fran%C3%A7oise/@50.7263324,5.7401202,17z/data=!4m12!1m6!3m5!1s0x47c0eda2be335225:0x6a805d4c64842037!2sMaistriaux+Fran%C3%A7oise!8m2!3d50.7263324!4d5.7423089!3m4!1s0x47c0eda2be335225:0x6a805d4c64842037!8m2!3d50.7263324!4d5.7423089" target="_blank" class="white-text"><i class="fa fa-map-signs" aria-hidden="true"></i> Calculer votre itinéraire</a></button></br>
+  </br>
     </div>
 
     <div class="parallax-container">
