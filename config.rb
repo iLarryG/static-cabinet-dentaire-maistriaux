@@ -150,7 +150,7 @@ when 'production'
     deploy.host            = 'ftp.cluster021.hosting.ovh.net'
     deploy.path            = 'www'
     deploy.user            = 'dentisteww'
-    deploy.password        = 'x'
+    deploy.password        = 'Francoise2410'
     deploy.build_before = true
   end
 else
